@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css-fundamental.css">
+</head>
+<style>
+    .percent {
+        background-color: salmon;
+        height: 50px;
+        padding: 5px;
+    }
+
+    .tombol {
+        background-color: #e2e8f0;
+        color: #0f172a !important;
+        padding: 10px 20px;
+    }
+
+    .tombol-primer {
+        background-color: #4f46e5;
+        color: #ffffff;
+    }
+
+    .card {
+        width: 35vw; 
+        padding: 30px; 
+        border: 1px solid rgb(223, 223, 223); 
+        border-radius: 15px;
+        margin-top: 50px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .card-btn {
+        border-radius: 8px;
+        background-color: #4f46e5;
+        padding: 12px;
+        border: none;
+        width: 100%;
+        font-size: 1.1rem;
+        color: white;
+        font-weight: bold;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .badge {
+        border-radius: 5px;
+        background-color: #d5d6ff;
+        color: #4f46e5;
+        font-size: 0.8rem;
+        padding: 7px;
+    }
+
+    .desc {
+        color: gray;
+        font-size: 1.1rem; 
+        line-height: 1.6;
+        margin: 10px 0;
+    }
+</style>
+<body>
+    <div class="kartu-pengumuman">
+        <p>Ini isi kartu pengumuman</p>
+    </div>
+
+    <div class="bg-indigo">
+        <p>Ini Kartu Pengumuman ke 2</p>
+    </div>
+
+    <!-- Color Type -->
+    <div class="color-type"></div>
+
+    <div class="percent">
+        <div style="width: 50%; background-color: aqua;">a</div>
+    </div>
+    <div style="width: 35vw; background-color: darkorange;">a</div>
+
+    <!-- Typography -->
+     <p style="font-size: 1rem;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus eum nisi velit tempora voluptatibus soluta! Natus, obcaecati. Cum sunt alias obcaecati dolor. Facere rem officiis provident iusto aperiam qui praesentium.</p>
+
+     <div class="tombol tombol-primer">Tombol Biasa</div>
+
+     <!-- Exercise -->
+     <div class="card">
+        <div class="header">
+            <span class="badge">CSS PRO</span>
+            <span>Modul 01</span>
+        </div>
+        <h2 style="margin: 10px 0;">Tata Letak Cepat</h2>
+        <p class="desc">Menggabungkan kelas Color, Size, Tipografi, serta elemen Div dan Span secara terpadu</p>
+        <button class="card-btn">Mulai Coding</button>
+     </div>
+</body>
+</html>
