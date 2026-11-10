@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .card {
+        margin: 100px 100px 8px;
+        background-color: salmon;
+        width: 300px;
+        height: 100px;
+        /* border: solid black 1px; */
+        /* border-color: black;
+        border-width: 5px;
+        border-style: dotted; */
+        border-top: 5px blue solid;
+    }
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: aqua;
+        border: 1px solid black;
+        width: 100%;
+        height: 100px;
+        gap: 10px;
+    }
+
+    .child {
+        width: 50px;
+        height: 50px;
+        background-color: brown;
+        border: 1px solid black;
+    }
+
+    .cont-grid {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 50px);
+        background-color: dodgerblue;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .cont-grid div {
+        background-color: lightblue;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    p {
+        color: red;
+    }
+
+    @media (min-width: 400px) {
+        p {
+            color: blue;
+        }
+    }
+
+    @media (min-width: 700px) {
+        p {
+            color: green;
+        }
+    }
+
+    .btn {
+        background-color: lightblue;
+        color: black;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+    }
+
+    .btn:hover {
+        background-color: yellow;
+        color: indianred;
+    }
+</style>
+<body>
+    <div class="card"></div>
+
+    <!-- FLEX -->
+     <div class="container">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+     </div>
+
+     <!-- GRID -->
+      <div class="cont-grid">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div style="grid-column: 1 / span 2; grid-row: 2 / span 2;">5</div>
+      </div>
+
+      <!-- MEDIA QUERY -->
+       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam ea deleniti magni aspernatur recusandae iusto libero exercitationem officiis magnam nostrum vitae, suscipit quam mollitia tempora voluptates odio nemo id corporis.</p>
+
+       <button class="btn">Contoh Hover</button>
+</body>
+</html>
