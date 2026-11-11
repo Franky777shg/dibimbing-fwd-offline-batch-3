@@ -5,29 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <b>NETFLIX</b>
-        <select>
-            <option>English</option>
-            <option>Bahasa Indonesia</option>
-        </select>
-        <button>Sign In</button>
-    </header>
-
-    <br><br><br><br><br>
+    <header class="hero">
+        <div class="mask">
+            <div class="navbar">
+                <a href="#" class="logo">NETFLIX</a>
+                <div class="nav-actions">
+                    <select>
+                        <option>English</option>
+                        <option>Bahasa Indonesia</option>
+                    </select>
+                    <button class="btn btn-signin">Sign In</button>
+                </div>
+            </div>
+            <main class="hero-content">
+                <h1>Unlimited movies, TV<br> shows, and more</h1>
+                <h4 class="tagline">Starts at IDR 54,000. Cancel anytime.</h4>
+                <p class="cta-text">Ready to watch? Enter your email to create or restart your membership.</p>
     
-    <section>
-        <center>
-            <h1>Unlimited movies, TV shows, and more</h1>
-            <h4>Starts at IDR 54,000. Cancel anytime.</h4>
-            <p>Ready to watch? Enter your email to create or restart your membership.</p>
-            <input type="email" placeholder="Email address">
-            <button>Get Started</button>
-        </center>
-    </section>
+                <div class="signup">
+                    <input type="email" placeholder="Email address">
+                    <button class="btn btn-getstarted">Get Started ></button>
+                </div>
+            </main>
+        </div>
+    </header>
     
     <br><br><br><br><br>
     
