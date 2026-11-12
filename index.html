@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<style type="text/tailwindcss">
+    @import "tailwindcss";
+
+    @theme {
+        --color-pinkjambu: rgb(250,105,158);
+        --color-gree: #4ADD82;
+    }
+    .btn-pink {
+        @apply bg-pinkjambu text-gree;
+    }
+
+    .card-custom {
+        @apply mt-10 ms-2 me-5 hover:bg-blue-500 cursor-pointer border rounded-lg p-4;
+    }
+</style>
+<body>
+    <h1 class="text-3xl font-bold underline text-[rgb(250,105,158)]">
+        Hello world!
+    </h1>
+
+    <div class="group card-custom">
+        <h3 class="group-hover:text-white">Judul Kartu</h3>
+        <p class="group-hover:text-white">Ini akan ikut berubah ketika parent di hover</p>
+    </div>
+
+    <!-- <span class="mt-5 ms-5 inline-block h-10 w-10 animate-spin rounded-full border-5 border-t-transparent border-gray-400"></span> -->
+
+    <p class="text-red-500 sm:text-blue-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero laudantium dolor saepe? Eveniet, iure cum fuga fugit autem alias minima similique qui dolore velit repellendus tenetur adipisci eum, at sint!</p>
+
+    <div class="h-10 w-100 bg-pinkjambu text-gree">
+        contoh pakai theme
+    </div>
+</body>
+
+</html>

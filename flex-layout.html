@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<style type="text/tailwindcss">
+    @import "tailwindcss";
+
+    .center {
+        @apply flex justify-center items-center;
+    }
+</style>
+
+<body class="flex flex-col h-screen p-2 gap-2">
+    <header class="bg-red-500 grow center">header</header>
+    <nav class="bg-blue-500 grow center">nav</nav>
+    <main class="flex grow-3 gap-2">
+        <div class="flex flex-col grow-2 gap-2">
+            <div class="grow bg-yellow-500 center">section</div>
+            <div class="grow bg-orange-500 center">article</div>
+        </div>
+        <div class="grow bg-pink-500 center">aside</div>
+    </main>
+    <footer class="bg-gray-500 grow center">footer</footer>
+</body>
+
+</html>
