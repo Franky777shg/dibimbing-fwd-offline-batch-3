@@ -1,10 +1,10 @@
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} */
 
-body {
+/* body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   background-color: #000;
   color: #fff;
@@ -25,9 +25,9 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 24px 10vw;
-}
+} */
 
-.logo {
+/* .logo {
   color: #e50914;
   font-size: 2.7rem;
   font-weight: 900;
@@ -39,17 +39,17 @@ body {
   display: flex;
   align-items: center;
   gap: 16px;
-}
+} */
 
-select {
+/* select {
   height: 4vh;
   width: 180px;
   background-color: transparent;
   border-radius: 5px;
   color: white;
-}
+} */
 
-.btn {
+/* .btn {
   cursor: pointer;
   font-family: inherit;
   border: none;
@@ -66,7 +66,7 @@ select {
 
 .btn-signin:hover {
   background: #f6121d;
-}
+} */
 
 .hero-content {
   margin-top: 18vh;

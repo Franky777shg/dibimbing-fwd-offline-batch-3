@@ -5,30 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- <link rel="stylesheet" href="style.css"> -->
 </head>
+<style type="text/tailwindcss">
+    @import "tailwindcss";
 
-<body>
-    <header class="hero">
-        <div class="mask">
-            <div class="navbar">
-                <a href="#" class="logo">NETFLIX</a>
-                <div class="nav-actions">
-                    <select>
+    .btn {
+        @apply cursor-pointer font-[inherit] rounded-sm;
+    }
+</style>
+
+<body class="font-['Helvetica_Neue',Helvetica,Arial,sans-serif] bg-black text-white">
+    <header class="bg-[url('./background-img.jpg')] h-[90vh]">
+        <div class="bg-black/70 h-[inherit]">
+            <div class="flex items-center justify-between py-6 px-[10vw]">
+                <a href="#" class="text-[#e50914] text-[2.7rem] font-black no-underline uppercase">NETFLIX</a>
+                <div class="flex items-center gap-4">
+                    <select class="h-[4vh] w-45 bg-transparent rounded-[5px] text-white border border-gray-500 backdrop-blur-sm">
                         <option>English</option>
                         <option>Bahasa Indonesia</option>
                     </select>
-                    <button class="btn btn-signin">Sign In</button>
+                    <button class="btn bg-[#e50914] text-white py-2 px-[18px] text-base font-semibold hover:bg-[#f6121d]">Sign In</button>
                 </div>
             </div>
-            <main class="hero-content">
-                <h1>Unlimited movies, TV<br> shows, and more</h1>
-                <h4 class="tagline">Starts at IDR 54,000. Cancel anytime.</h4>
-                <p class="cta-text">Ready to watch? Enter your email to create or restart your membership.</p>
+            <main class="mt-[18vh] flex flex-col items-center justify-center text-center px-5 pb-20">
+                <h1 class="text-[3.75rem] font-semibold leading-[1.1]">Unlimited movies, TV<br> shows, and more</h1>
+                <h4 class="mt-5 text-2xl font-medium">Starts at IDR 54,000. Cancel anytime.</h4>
+                <p class="mt-[28px] text-[1.2rem] font-normal">Ready to watch? Enter your email to create or restart your membership.</p>
     
-                <div class="signup">
-                    <input type="email" placeholder="Email address">
-                    <button class="btn btn-getstarted">Get Started ></button>
+                <div class="mt-5 flex gap-2 w-[45vw]">
+                    <input class="bg-[rgba(0, 0, 0, 0.5)] border rounded-sm w-[70%] text-white text-base px-[15px] backdrop-blur-sm" type="email" placeholder="Email address">
+                    <button class="btn bg-[#e50914] text-white text-2xl font-medium px-7 h-[60px] whitespace-nowrap hover:bg-[#f6121d]">Get Started ></button>
                 </div>
             </main>
         </div>
