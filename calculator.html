@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" placeholder="Masukan angka 1" id="angka1">
+    <input type="number" placeholder="Masukan angka 2" id="angka2">
+    <button onclick="getResult()">Gas</button>
+    <h4>Result:</h4>
+    <h2 id="result"></h2>
+</body>
+<script>
+    const getResult = () => {
+        const angka1 = document.getElementById("angka1").value
+        const angka2 = document.getElementById("angka2").value
+        const result = Number(angka1) + Number(angka2)
+        alert(`Hasilnya ${result} cuy!`)
+        // document.getElementById("result").textContent = result
+    }
+</script>
+</html>
