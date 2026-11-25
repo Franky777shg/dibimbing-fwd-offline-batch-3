@@ -1,23 +1,23 @@
-const { groupBy, meanBy } = require('lodash')
+const student = {
+  name: "Budi",
+  age: 20
+};
 
-let input = [
-  { name: "Budi", role: "admin", age: 30 },
-  { name: "Siti", role: "user", age: 20 },
-  { name: "Andi", role: "admin", age: 25 },
-  { name: "Rina", role: "user", age: 35 }
-]
-
-const analyzeUsers = (param) => {
-    const groupedUser = groupBy(param, 'role')
-
-    const result = {
-        totalUsers: param.length,
-        admin: groupedUser.admin.length,
-        user: groupedUser.user.length,
-        averageAge: meanBy(param, 'age')
+// Cara Buatnya
+const updateStudent = (data, ...hobbies) => {
+    let result = {
+        name: data.name,
+        age: data.age,
+        hobbies
     }
-
-    return result
+    console.log(result)
 }
 
-console.log(analyzeUsers(input))
+// Cara memanggilnya
+updateStudent(student, "Gaming", "Reading");
+
+// {
+//   name: "Budi",
+//   age: 20,
+//   hobbies: ["Gaming", "Reading"]
+// }
